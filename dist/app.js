@@ -157,6 +157,150 @@ angular.module('app', ['flowchart'])
             }
           ]
         },
+        
+        {
+          name: "Discrete Structures (CISC 2210)",
+          id: 8,
+          x: 800,
+          y: 100,
+          color: '#000',
+          borderColor: '#000',
+          connectors: [
+            {
+              type: flowchartConstants.topConnectorType,
+              id: 25
+            },
+            {
+              type: flowchartConstants.topConnectorType,
+              id: 26
+            },
+            {
+              type: flowchartConstants.topConnectorType,
+              id: 27
+            }
+          ]
+        },
+        
+        {
+          name: "Architecture (CISC 3110)",
+          id: 9,
+          x: 800,
+          y: 250,
+          color: '#000',
+          borderColor: '#000',
+          connectors: [
+            {
+              type: flowchartConstants.topConnectorType,
+              id: 28
+            },
+            {
+              type: flowchartConstants.topConnectorType,
+              id: 29
+            },
+            {
+              type: flowchartConstants.topConnectorType,
+              id: 30
+            }
+          ]
+        },
+        
+        {
+          name: "Algorithms (3220) OR Theory (3230)",
+          id: 10,
+          x: 1100,
+          y: 250,
+          color: '#000',
+          borderColor: '#000',
+          connectors: [
+            {
+              type: flowchartConstants.topConnectorType,
+              id: 31
+            },
+            {
+              type: flowchartConstants.topConnectorType,
+              id: 32
+            },
+            {
+              type: flowchartConstants.topConnectorType,
+              id: 33
+            }
+          ]
+        },
+        
+        {
+          name: "OS (CISC 3320)",
+          id: 11,
+          x: 1500,
+          y: 250,
+          color: '#000',
+          borderColor: '#000',
+          connectors: [
+            {
+              type: flowchartConstants.topConnectorType,
+              id: 34
+            }
+          ]
+        },
+  
+{
+  name: "Pre-Calc (MATH1011) OR placement in 1201",
+  id: 12,
+  x: 800,
+  y: 0,
+  color: '#000',
+  borderColor: '#000',
+  connectors: [
+    {
+      type: flowchartConstants.topConnectorType,
+      id: 35
+    }
+  ]
+},
+{
+  name: "Calc I",
+  id: 13,
+  x: 1500,
+  y: 500,
+  color: '#000',
+  borderColor: '#000',
+  connectors: [
+    {
+      type: flowchartConstants.topConnectorType,
+      id: 36
+    }
+  ]
+},
+   
+{
+  name: "Calc II",
+  id: 14,
+  x: 1500,
+  y: 600,
+  color: '#000',
+  borderColor: '#000',
+  connectors: [
+    {
+      type: flowchartConstants.topConnectorType,
+      id: 37
+    }
+  ]
+},
+
+{
+  name: "Statistics (MATH2501) OR (MATH3501)",
+  id: 15,
+  x: 1500,
+  y: 700,
+  color: '#000',
+  borderColor: '#000',
+  connectors: [
+    {
+      type: flowchartConstants.topConnectorType,
+      id: 38
+    }
+  ]
+},
+   
       ],
 //Edges is where you connect the nodes.
     edges: [
@@ -180,6 +324,10 @@ angular.module('app', ['flowchart'])
       	source: 5,
       	destination: 23
       },
+      {
+		source: 9,
+		destination: 25
+	  },
     ]
   };
 
