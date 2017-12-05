@@ -46,16 +46,17 @@ body {
   z-index: 1;
 }
 
+/* Deals with the aesthetics of the nodes */
 .innerNode {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 100px;
+  min-width: 50;
   border-radius: 5px;
 
   background-color: #ae1621;
   color: #fff;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .fc-node.fc-hover {

@@ -1429,6 +1429,7 @@ module.run(['$templateCache', function($templateCache) {
     '           callbacks="callbacks"\n' +
     '           user-node-callbacks="userNodeCallbacks"\n' +
     '           ng-repeat="node in model.nodes"></fc-node>\n' +
+    '         \n' +
     '</div>\n' +
     '');
 }]);

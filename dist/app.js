@@ -21,8 +21,8 @@ angular.module('app', ['flowchart'])
         {
           name: "Intro to C++ (CISC 1110",
           id: 2,
-          x: 400,
-          y: 100,
+          x: 50,
+          y: 350,
           color: '#000',
           borderColor: '#000',
           connectors: [
@@ -43,8 +43,8 @@ angular.module('app', ['flowchart'])
         {
           name: "Advanced C++ (CISC 3110)",
           id: 3,
-          x: 400,
-          y: 300,
+          x: 350,
+          y: 350,
           color: '#F15B26',
           connectors: [
             {
@@ -68,8 +68,8 @@ angular.module('app', ['flowchart'])
         {
           name: "Software Design I (CISC 3120)",
           id: 4,
-          x: 575,
-          y: 500,
+          x: 700,
+          y: 350,
           color: '#000',
           borderColor: '#000',
           connectors: [
@@ -90,8 +90,8 @@ angular.module('app', ['flowchart'])
         {
           name: "Software Design II (CISC 3140",
           id: 5,
-          x: 200,
-          y: 700,
+          x: 1000,
+          y: 300,
           color: '#000',
           borderColor: '#000',
           connectors: [
@@ -108,8 +108,8 @@ angular.module('app', ['flowchart'])
         {
           name: "Data Structures (CISC 3130)",
           id: 6,
-          x: 200,
-          y: 500,
+          x: 700,
+          y: 275,
           color: '#000',
           borderColor: '#000',
           connectors: [
@@ -130,8 +130,8 @@ angular.module('app', ['flowchart'])
         {
           name: "Project (CISC 4900 OR 5001)",
           id: 7,
-          x: 900,
-          y: 500,
+          x: 500,
+          y: 450,
           color: '#000',
           borderColor: '#000',
           connectors: [
@@ -145,8 +145,8 @@ angular.module('app', ['flowchart'])
         {
           name: "Discrete Structures (CISC 2210)",
           id: 8,
-          x: 800,
-          y: 100,
+          x: 250,
+          y: 175,
           color: '#000',
           borderColor: '#000',
           connectors: [
@@ -172,8 +172,8 @@ angular.module('app', ['flowchart'])
         {
           name: "Architecture (CISC 3310)",
           id: 9,
-          x: 800,
-          y: 250,
+          x: 700,
+          y: 190,
           color: '#000',
           borderColor: '#000',
           connectors: [
@@ -191,8 +191,8 @@ angular.module('app', ['flowchart'])
         {
           name: "Algorithms (3220) OR Theory (3230)",
           id: 10,
-          x: 1100,
-          y: 250,
+          x: 1000,
+          y: 125,
           color: '#000',
           borderColor: '#000',
           connectors: [
@@ -214,8 +214,8 @@ angular.module('app', ['flowchart'])
         {
           name: "OS (CISC 3320)",
           id: 11,
-          x: 1500,
-          y: 250,
+          x: 1000,
+          y: 200,
           color: '#000',
           borderColor: '#000',
           connectors: [
@@ -233,8 +233,8 @@ angular.module('app', ['flowchart'])
 {
   name: "Pre-Calc (MATH1011) OR placement in 1201",
   id: 12,
-  x: 800,
-  y: 0,
+  x: 100,
+  y: 75,
   color: '#000',
   borderColor: '#000',
   connectors: [
@@ -252,8 +252,8 @@ angular.module('app', ['flowchart'])
 {
   name: "Calc I",
   id: 13,
-  x: 1500,
-  y: 500,
+  x: 500,
+  y: 25,
   color: '#000',
   borderColor: '#000',
   connectors: [
@@ -275,8 +275,8 @@ angular.module('app', ['flowchart'])
 {
   name: "Calc II",
   id: 14,
-  x: 1500,
-  y: 600,
+  x: 700,
+  y: 25,
   color: '#000',
   borderColor: '#000',
   connectors: [
@@ -294,8 +294,8 @@ angular.module('app', ['flowchart'])
 {
   name: "Statistics (MATH2501) OR (MATH3501)",
   id: 15,
-  x: 1500,
-  y: 700,
+  x: 900,
+  y: 25,
   color: '#000',
   borderColor: '#000',
   connectors: [
