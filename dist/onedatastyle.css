@@ -1,5 +1,13 @@
 body {
-  font-family: sans-serif;
+  /* scale down website and realign the borders manually */
+  /* Mobile responsivity to be made */
+    font-family: sans-serif;
+  /*
+  -webkit-transform: scale(0.80);
+     -moz-transform: scale(0.80);
+          transform: scale(0.80);
+  margin: 0 -180px;
+  */
 }
 
 .button-overlay {

@@ -33,6 +33,10 @@ angular.module('app', ['flowchart'])
             {
               type: flowchartConstants.bottomConnectorType,
               id: 10
+            },
+            {
+              type: flowchartConstants.bottomConnectorType,
+              id: 27
             }
           ]
         },
@@ -46,14 +50,6 @@ angular.module('app', ['flowchart'])
             {
               type: flowchartConstants.topConnectorType,
               id: 1
-            },
-            {
-              type: flowchartConstants.topConnectorType,
-              id: 2
-            },
-            {
-              type: flowchartConstants.topConnectorType,
-              id: 3
             },
             {
               type: flowchartConstants.bottomConnectorType,
@@ -72,13 +68,13 @@ angular.module('app', ['flowchart'])
         {
           name: "Software Design I (CISC 3120)",
           id: 4,
-          x: 200,
+          x: 575,
           y: 500,
           color: '#000',
           borderColor: '#000',
           connectors: [
             {
-              type: flowchartConstants.topConnectorType,
+              type: flowchartConstants.bottomConnectorType,
               id: 13
             },
             {
@@ -86,7 +82,7 @@ angular.module('app', ['flowchart'])
               id: 14
             },
             {
-              type: flowchartConstants.topConnectorType,
+              type: flowchartConstants.bottomConnectorType,
               id: 15
             }
           ]
@@ -107,22 +103,18 @@ angular.module('app', ['flowchart'])
               type: flowchartConstants.topConnectorType,
               id: 17
             },
-            {
-              type: flowchartConstants.topConnectorType,
-              id: 18
-            }
-          ]
+         ]
         },
         {
-          name: "Data Structures (CISC #)",
+          name: "Data Structures (CISC 3130)",
           id: 6,
-          x: 575,
+          x: 200,
           y: 500,
           color: '#000',
           borderColor: '#000',
           connectors: [
             {
-              type: flowchartConstants.topConnectorType,
+              type: flowchartConstants.bottomConnectorType,
               id: 19
             },
             {
@@ -130,7 +122,7 @@ angular.module('app', ['flowchart'])
               id: 20
             },
             {
-              type: flowchartConstants.topConnectorType,
+              type: flowchartConstants.bottomConnectorType,
               id: 21
             }
           ]
@@ -145,15 +137,7 @@ angular.module('app', ['flowchart'])
           connectors: [
             {
               type: flowchartConstants.topConnectorType,
-              id: 22
-            },
-            {
-              type: flowchartConstants.topConnectorType,
               id: 23
-            },
-            {
-              type: flowchartConstants.topConnectorType,
-              id: 24
             }
           ]
         },
@@ -175,14 +159,18 @@ angular.module('app', ['flowchart'])
               id: 26
             },
             {
-              type: flowchartConstants.topConnectorType,
-              id: 27
-            }
+              type: flowchartConstants.bottomConnectorType,
+              id: 39
+            },
+            {
+              type: flowchartConstants.bottomConnectorType,
+              id: 40
+            },
           ]
         },
         
         {
-          name: "Architecture (CISC 3110)",
+          name: "Architecture (CISC 3310)",
           id: 9,
           x: 800,
           y: 250,
@@ -190,16 +178,12 @@ angular.module('app', ['flowchart'])
           borderColor: '#000',
           connectors: [
             {
-              type: flowchartConstants.topConnectorType,
+              type: flowchartConstants.bottomConnectorType,
               id: 28
             },
             {
               type: flowchartConstants.topConnectorType,
               id: 29
-            },
-            {
-              type: flowchartConstants.topConnectorType,
-              id: 30
             }
           ]
         },
@@ -238,6 +222,10 @@ angular.module('app', ['flowchart'])
             {
               type: flowchartConstants.topConnectorType,
               id: 34
+            },
+            {
+              type: flowchartConstants.topConnectorType,
+              id: 2
             }
           ]
         },
@@ -251,9 +239,14 @@ angular.module('app', ['flowchart'])
   borderColor: '#000',
   connectors: [
     {
-      type: flowchartConstants.topConnectorType,
+      type: flowchartConstants.bottomConnectorType,
       id: 35
+    },
+    {
+      type: flowchartConstants.bottomConnectorType,
+      id: 41
     }
+    
   ]
 },
 {
@@ -267,6 +260,14 @@ angular.module('app', ['flowchart'])
     {
       type: flowchartConstants.topConnectorType,
       id: 36
+    },
+    {
+      type: flowchartConstants.bottomConnectorType,
+      id: 42
+    },
+    {
+      type: flowchartConstants.bottomConnectorType,
+      id: 43
     }
   ]
 },
@@ -282,6 +283,10 @@ angular.module('app', ['flowchart'])
     {
       type: flowchartConstants.topConnectorType,
       id: 37
+    },
+    {
+      type: flowchartConstants.bottomConnectorType,
+      id: 44
     }
   ]
 },
@@ -305,29 +310,69 @@ angular.module('app', ['flowchart'])
 //Edges is where you connect the nodes.
     edges: [
       {
-        source: 10,
-        destination: 1
+        source: 35,
+        destination: 36
       },
       {
-        source: 5,
-        destination: 14
+        source: 42,
+        destination: 37
       },
       {
-        source: 14,
-        destination: 17
+        source: 44,
+        destination: 38
       },
       {
-      	source: 5,
-      	destination: 20
+      	source: 41,
+      	destination: 25
       },
       {
-      	source: 5,
-      	destination: 23
+      	source: 43,
+      	destination: 31
       },
       {
 		source: 9,
-		destination: 25
+		destination: 26
 	  },
+	  {
+	  	source: 39,
+	  	destination: 29
+	  },
+	  {
+	  	source: 40,
+	  	destination: 32
+	  },
+	  {
+	    source: 28,
+	    destination: 33
+	  },
+	  {
+	    source: 10,
+	    destination: 1
+	  },
+	  {
+	    source: 4,
+	    destination: 20
+	  },
+	  {
+	  	source: 19,
+	  	destination: 34
+	  },
+	  {
+	  	source: 21,
+	  	destination: 16
+	  },
+	  {
+	  	source: 5,
+	  	destination: 14
+	  },
+	  {
+	  	source: 13,
+	  	destination: 17
+	  },
+	  {
+	  	source: 12,
+	  	destination: 23
+	  }
     ]
   };
 
