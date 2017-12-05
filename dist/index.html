@@ -4,6 +4,7 @@
   <title>AngularJS-FlowChart</title>
 
 <!-- addition of jQuery CDN & BootStrap CDN -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous"> 
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -14,42 +15,53 @@
   <link rel="stylesheet" href="flowchart.css" type="text/css">
   <link rel="stylesheet" href="onedatastyle.css" type="text/css">
 </head>
+
+<header class="fluid-container">
+<div class="row">
+	<img src="https://i.imgur.com/fBx07qZ.png" class="img-fluid">
+</div>
+</header>
+
 <body ng-app="app" ng-controller="AppCtrl" ng-keydown="keyDown($event)" ng-keyup="keyUp($event)">
 <div style="width: 100%; height: 1000px;">
-<img src="https://i.imgur.com/fBx07qZ.png" height=300>
 
 <div class="reqChart">
-  <div class="button-overlay">
-<!-- This comment prevents creation of nodes.
-    <button ng-click="addNewNode()" title="Add a new node to then chart">Add Node</button>
--->
-    <!--<button ng-click="addNewInputConnector()" ng-disabled="modelservice.nodes.getSelectedNodes().length == 0"-->
-            <!--title="Add a new input connector to the selected node">-->
-      <!--Add Input-->
-    <!--</button>-->
-    <!--<button ng-click="addNewOutputConnector()" ng-disabled="modelservice.nodes.getSelectedNodes().length == 0"-->
-            <!--title="Add a new output connector to the selected node">-->
-      <!--Add Output-->
-    <!--</button>-->
-    
-    <!-- This comment prevents deletion of nodes.
-    <button ng-click="deleteSelected()"
-            ng-disabled="modelservice.nodes.getSelectedNodes().length == 0 && modelservice.edges.getSelectedEdges().length == 0"
-            title="Delete selected nodes and connections">
-      Delete Selected
-    </button>
-   -->
-    
-    
- <!-- prevent Activating Workflow
-    <button ng-click="activateWorkflow()">
-      Activate Workflow
-    </button>
--->
-  </div>
-  <fc-canvas model="model" selected-objects="flowchartselected" edge-style="curved" callbacks="callbacks"
-             automatic-resize="true"></fc-canvas>
+
+	<div class="fluid-container">
+	<div class="row">
+		  <div class="button-overlay">
+		<!-- This comment prevents creation of nodes.
+		    <button ng-click="addNewNode()" title="Add a new node to then chart">Add Node</button>
+		-->
+		    <!--<button ng-click="addNewInputConnector()" ng-disabled="modelservice.nodes.getSelectedNodes().length == 0"-->
+		            <!--title="Add a new input connector to the selected node">-->
+		      <!--Add Input-->
+		    <!--</button>-->
+		    <!--<button ng-click="addNewOutputConnector()" ng-disabled="modelservice.nodes.getSelectedNodes().length == 0"-->
+		            <!--title="Add a new output connector to the selected node">-->
+		      <!--Add Output-->
+		    <!--</button>-->
+		    
+		    <!-- This comment prevents deletion of nodes.
+		    <button ng-click="deleteSelected()"
+		            ng-disabled="modelservice.nodes.getSelectedNodes().length == 0 && modelservice.edges.getSelectedEdges().length == 0"
+		            title="Delete selected nodes and connections">
+		      Delete Selected
+		    </button>
+		   -->
+		    
+		    
+		 <!-- prevent Activating Workflow
+		    <button ng-click="activateWorkflow()">
+		      Activate Workflow
+		    </button>
+		-->
+		  </div>
+	  <fc-canvas model="model" selected-objects="flowchartselected" edge-style="curved" callbacks="callbacks"
+	             automatic-resize="true"></fc-canvas>
+	</div>
 </div>
+<div>
 <script src="vendor.js"></script>
 <script src="ngFlowchart.js"></script>
 
