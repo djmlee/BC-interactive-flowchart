@@ -117,9 +117,10 @@ body {
 .fc-connector {
    width: 0;
    height: 0;
-   border-left: 18px solid blue;
+   
+   border-left: 20px solid gray; /* turn gray into transparent to remove the bugged line nipple arrow heads */
    border-top: 20px solid transparent;
-   border-bottom: 18px solid transparent;
+   border-bottom: 20px solid transparent;
 }
 
 .fc-connector.fc-hover {
@@ -127,14 +128,14 @@ body {
 }
 
 .fc-edge {
-  stroke: blue;
+  stroke: gray;
   stroke-width: 4;
   fill: transparent;
 
 }
 
 .fc-edge.fc-hover {
-  stroke: gray;
+  stroke: yellow;
   stroke-width: 6;
   fill: transparent;
 }

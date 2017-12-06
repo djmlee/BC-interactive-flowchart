@@ -1398,8 +1398,9 @@ try {
 module.run(['$templateCache', function($templateCache) {
   $templateCache.put('flowchart/canvas.html',
     '<div ng-click="canvasClick($event)">\n' +
-    '  <svg>\n' +
+    '  <svg> <!-- Scalable Vector Graphics. This draws edges --> \n' +
     '    <g ng-repeat="edge in model.edges">\n' +
+    '    <!-- the actual code segment for drawing edges below -->\n' +
     '      <path\n' +
     '        ng-click="edgeClick($event, edge)"\n' +
     '        ng-dblclick="edgeDoubleClick($event, edge)"\n' +
@@ -1408,6 +1409,7 @@ module.run(['$templateCache', function($templateCache) {
     '        ng-mouseleave="edgeMouseLeave($event, edge)"\n' +
     '        ng-attr-class="{{(modelservice.edges.isSelected(edge) && flowchartConstants.selectedClass + \' \' + flowchartConstants.edgeClass) || edge == mouseOver.edge && flowchartConstants.hoverClass + \' \' + flowchartConstants.edgeClass || edge.active && flowchartConstants.activeClass + \' \' + flowchartConstants.edgeClass || flowchartConstants.edgeClass}}"\n' +
     '        ng-attr-d="{{getEdgeDAttribute(modelservice.edges.sourceCoord(edge), modelservice.edges.destCoord(edge), edgeStyle)}}"></path>\n' +
+    '\n' +
     '    </g>\n' +
     '    <g ng-if="dragAnimation == flowchartConstants.dragAnimationRepaint && edgeDragging.isDragging">\n' +
     '\n' +
@@ -1429,7 +1431,7 @@ module.run(['$templateCache', function($templateCache) {
     '           callbacks="callbacks"\n' +
     '           user-node-callbacks="userNodeCallbacks"\n' +
     '           ng-repeat="node in model.nodes"></fc-node>\n' +
-    '         \n' +
+    '         <h1>SHIET</h1>\n' +
     '</div>\n' +
     '');
 }]);
