@@ -19,32 +19,24 @@ angular.module('app', ['flowchart'])
     var model = {
       nodes: [
         {
-          name: "Intro to C++ (CISC 1110",
+          name: "Intro to C++ (CISC 1110)",
           id: 2,
-          x: 50,
-          y: 350,
+          x: 400,
+          y: 250,
           color: '#000',
           borderColor: '#000',
           connectors: [
             {
               type: flowchartConstants.bottomConnectorType,
-              id: 9
-            },
-            {
-              type: flowchartConstants.bottomConnectorType,
               id: 10
-            },
-            {
-              type: flowchartConstants.bottomConnectorType,
-              id: 27
             }
           ]
         },
         {
           name: "Advanced C++ (CISC 3110)",
           id: 3,
-          x: 350,
-          y: 350,
+          x: 700,
+          y: 375,
           color: '#F15B26',
           connectors: [
             {
@@ -53,45 +45,33 @@ angular.module('app', ['flowchart'])
             },
             {
               type: flowchartConstants.bottomConnectorType,
-              id: 4
-            },
-            {
-              type: flowchartConstants.bottomConnectorType,
               id: 5
-            },
-            {
-              type: flowchartConstants.bottomConnectorType,
-              id: 12
             }
           ]
         },
         {
           name: "Software Design I (CISC 3120)",
           id: 4,
-          x: 700,
-          y: 350,
+          x: 1000,
+          y: 470,
           color: '#000',
           borderColor: '#000',
           connectors: [
             {
-              type: flowchartConstants.bottomConnectorType,
+              type: flowchartConstants.topConnectorType,
               id: 13
             },
             {
-              type: flowchartConstants.topConnectorType,
-              id: 14
-            },
-            {
               type: flowchartConstants.bottomConnectorType,
-              id: 15
+              id: 14
             }
           ]
         },
         {
-          name: "Software Design II (CISC 3140",
+          name: "Software Design II (CISC 3140)",
           id: 5,
-          x: 1000,
-          y: 300,
+          x: 1300,
+          y: 420,
           color: '#000',
           borderColor: '#000',
           connectors: [
@@ -99,24 +79,17 @@ angular.module('app', ['flowchart'])
               type: flowchartConstants.topConnectorType,
               id: 16
             },
-            {
-              type: flowchartConstants.topConnectorType,
-              id: 17
-            },
-         ]
+            
+          ]
         },
         {
           name: "Data Structures (CISC 3130)",
           id: 6,
-          x: 700,
-          y: 275,
+          x: 1000,
+          y: 376,
           color: '#000',
           borderColor: '#000',
           connectors: [
-            {
-              type: flowchartConstants.bottomConnectorType,
-              id: 19
-            },
             {
               type: flowchartConstants.topConnectorType,
               id: 20
@@ -130,23 +103,24 @@ angular.module('app', ['flowchart'])
         {
           name: "Project (CISC 4900 OR 5001)",
           id: 7,
-          x: 500,
-          y: 450,
+          x: 1000,
+          y: 565,
           color: '#000',
           borderColor: '#000',
           connectors: [
             {
               type: flowchartConstants.topConnectorType,
               id: 23
-            }
+            },
+            
           ]
         },
         
         {
           name: "Discrete Structures (CISC 2210)",
           id: 8,
-          x: 250,
-          y: 175,
+          x: 700,
+          y: 240,
           color: '#000',
           borderColor: '#000',
           connectors: [
@@ -155,35 +129,27 @@ angular.module('app', ['flowchart'])
               id: 25
             },
             {
-              type: flowchartConstants.topConnectorType,
-              id: 26
-            },
-            {
               type: flowchartConstants.bottomConnectorType,
-              id: 39
-            },
-            {
-              type: flowchartConstants.bottomConnectorType,
-              id: 40
-            },
+              id: 27
+            }
           ]
         },
         
         {
           name: "Architecture (CISC 3310)",
           id: 9,
-          x: 700,
-          y: 190,
+          x: 1000,
+          y: 250,
           color: '#000',
           borderColor: '#000',
           connectors: [
             {
-              type: flowchartConstants.bottomConnectorType,
-              id: 28
-            },
-            {
               type: flowchartConstants.topConnectorType,
               id: 29
+            },
+            {
+              type: flowchartConstants.bottomConnectorType,
+              id: 30
             }
           ]
         },
@@ -192,18 +158,10 @@ angular.module('app', ['flowchart'])
           name: "Algorithms (3220) OR Theory (3230)",
           id: 10,
           x: 1000,
-          y: 125,
+          y: 150,
           color: '#000',
           borderColor: '#000',
           connectors: [
-            {
-              type: flowchartConstants.topConnectorType,
-              id: 31
-            },
-            {
-              type: flowchartConstants.topConnectorType,
-              id: 32
-            },
             {
               type: flowchartConstants.topConnectorType,
               id: 33
@@ -212,48 +170,39 @@ angular.module('app', ['flowchart'])
         },
         
         {
-          name: "OS (CISC 3320)",
+          name: "Operating Systems (CISC 3320)",
           id: 11,
-          x: 1000,
-          y: 200,
+          x: 1300,
+          y: 240,
           color: '#000',
           borderColor: '#000',
           connectors: [
             {
               type: flowchartConstants.topConnectorType,
               id: 34
-            },
-            {
-              type: flowchartConstants.topConnectorType,
-              id: 2
             }
           ]
         },
   
 {
-  name: "Pre-Calc (MATH1011) OR placement in 1201",
+  name: "Pre-Calculus (MATH 1011) OR placement in Calculus I (MATH 1201)",
   id: 12,
-  x: 100,
-  y: 75,
+  x: 400,
+  y: 37,
   color: '#000',
   borderColor: '#000',
   connectors: [
     {
       type: flowchartConstants.bottomConnectorType,
       id: 35
-    },
-    {
-      type: flowchartConstants.bottomConnectorType,
-      id: 41
     }
-    
   ]
 },
 {
-  name: "Calc I",
+  name: "Calculus I (MATH 1201)",
   id: 13,
-  x: 500,
-  y: 25,
+  x: 700,
+  y: 50,
   color: '#000',
   borderColor: '#000',
   connectors: [
@@ -263,20 +212,16 @@ angular.module('app', ['flowchart'])
     },
     {
       type: flowchartConstants.bottomConnectorType,
-      id: 42
-    },
-    {
-      type: flowchartConstants.bottomConnectorType,
-      id: 43
+      id: 32
     }
   ]
 },
    
 {
-  name: "Calc II",
+  name: "Calculus II (MATH 1206)",
   id: 14,
-  x: 700,
-  y: 25,
+  x: 1000,
+  y: 50,
   color: '#000',
   borderColor: '#000',
   connectors: [
@@ -286,7 +231,7 @@ angular.module('app', ['flowchart'])
     },
     {
       type: flowchartConstants.bottomConnectorType,
-      id: 44
+      id: 39
     }
   ]
 },
@@ -294,8 +239,8 @@ angular.module('app', ['flowchart'])
 {
   name: "Statistics (MATH2501) OR (MATH3501)",
   id: 15,
-  x: 900,
-  y: 25,
+  x: 1300,
+  y: 39,
   color: '#000',
   borderColor: '#000',
   connectors: [
@@ -304,75 +249,95 @@ angular.module('app', ['flowchart'])
       id: 38
     }
   ]
-},
+},{
+  name: "English Composition II (ENGL 1012)",
+  id: 16,
+  x: 400,
+  y: 500,
+  color: '#000',
+  borderColor: '#000',
+  connectors: [
+    {
+      type: flowchartConstants.bottomConnectorType,
+      id: 40
+    }
+  ]
+},{
+  name: "Computers and Ethics (CISC 2820w)",
+  id: 17,
+  x: 700,
+  y: 500,
+  color: '#000',
+  borderColor: '#000',
+  connectors: [
+    {
+      type: flowchartConstants.topConnectorType,
+      id: 41
+    }
+  ]
+}
    
       ],
 //Edges is where you connect the nodes.
     edges: [
       {
-        source: 35,
-        destination: 36
+        source: 10,
+        destination: 1
       },
       {
-        source: 42,
-        destination: 37
+        source: 5,
+        destination: 13
       },
       {
-        source: 44,
-        destination: 38
+        source: 14,
+        destination: 16
       },
       {
-      	source: 41,
-      	destination: 25
+      	source: 5,
+      	destination: 20
       },
       {
-      	source: 43,
-      	destination: 31
+      	source: 5,
+      	destination: 23
       },
       {
-		source: 9,
-		destination: 26
-	  },
-	  {
-	  	source: 39,
-	  	destination: 29
-	  },
-	  {
-	  	source: 40,
-	  	destination: 32
-	  },
-	  {
-	    source: 28,
-	    destination: 33
-	  },
-	  {
-	    source: 10,
-	    destination: 1
-	  },
-	  {
-	    source: 4,
-	    destination: 20
-	  },
-	  {
-	  	source: 19,
-	  	destination: 34
-	  },
-	  {
-	  	source: 21,
-	  	destination: 16
-	  },
-	  {
-	  	source: 5,
-	  	destination: 14
-	  },
-	  {
-	  	source: 13,
-	  	destination: 17
-	  },
-	  {
-	  	source: 12,
-	  	destination: 23
-	  }
+	source: 10,
+	destination: 25
+      },{
+	source: 35,
+	destination: 36
+      },{
+	source: 32,
+	destination: 37
+      },{
+	source: 39,
+	destination: 38
+      },{
+	source: 27,
+	destination: 29
+      },{
+	source: 30,
+	destination: 34
+      },{
+	source: 27,
+	destination: 33
+      },{
+	source: 32,
+	destination: 33
+      },{
+	source: 21,
+	destination: 34
+      },
+      {
+	source: 21,
+	destination: 16
+      },{
+	source: 35,
+	destination: 25
+      },{
+	source: 40,
+	destination: 41
+      }
     ]
   };
 

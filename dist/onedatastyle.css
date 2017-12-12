@@ -1,13 +1,5 @@
 body {
-  /* scale down website and realign the borders manually */
-  /* Mobile responsivity to be made */
-    font-family: sans-serif;
-  /*
-  -webkit-transform: scale(0.80);
-     -moz-transform: scale(0.80);
-          transform: scale(0.80);
-  margin: 0 -180px;
-  */
+  font-family: sans-serif;
 }
 
 .button-overlay {
@@ -46,17 +38,17 @@ body {
   z-index: 1;
 }
 
-/* Deals with the aesthetics of the nodes */
 .innerNode {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 50;
-  border-radius: 5px;
+  max-width: 175px;
+  max-height: 100px;
+  border-radius: 50px;
 
-  background-color: #ae1621;
-  color: #fff;
-  font-size: 14px;
+  background-color: #9FD2FF;
+  color: #000000; /* font color */
+  font-size: 17px;
 }
 
 .fc-node.fc-hover {
@@ -75,6 +67,7 @@ body {
 
 .fc-node p {
   padding: 0 15px;
+  width: 80%;
   text-align: center;
 }
 
@@ -86,21 +79,21 @@ body {
   display: flex;
   flex-direction: row;
 
-  z-index: -10;
+  z-index: -10; /* puts triangle behind node */
 }
 
 .fc-topConnectors {
-  left: -37.5px;
+  left: -98px;
 }
 
 .fc-bottomConnectors {
-  right: -30px;
+  right: -86px;
 }
 
 .fc-magnet {
   display: flex;
   flex-grow: 1;
-  height: 40px;
+  height: 30px;
 
   justify-content: center;
 }
@@ -117,10 +110,9 @@ body {
 .fc-connector {
    width: 0;
    height: 0;
-   
-   border-left: 20px solid gray; /* turn gray into transparent to remove the bugged line nipple arrow heads */
-   border-top: 20px solid transparent;
-   border-bottom: 20px solid transparent;
+   border-left: 20px solid blue;
+   border-top: 14px solid transparent;
+   border-bottom: 14px solid transparent;
 }
 
 .fc-connector.fc-hover {
@@ -128,14 +120,14 @@ body {
 }
 
 .fc-edge {
-  stroke: gray;
-  stroke-width: 4;
+  stroke: blue;
+  stroke-width: 2;
   fill: transparent;
 
 }
 
 .fc-edge.fc-hover {
-  stroke: yellow;
+  stroke: gray;
   stroke-width: 6;
   fill: transparent;
 }
