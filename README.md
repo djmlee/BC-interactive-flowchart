@@ -7,7 +7,9 @@ This is the git repo for the course project
 
 ## Getting Started
 
-blahblahblah
+1. Clone or download the BC interative master folder.
+2. Open folder in terminal or command line.
+3. input "gulp" as a command and a live demo should start.
 
 ## Browser Support
 BC Flowchart supports Chrome, Firefox, Opera and IE10+. Safari is not supported. PRs to expand support are welcome.
